@@ -1,6 +1,6 @@
 {
   "name": "ngx-drag-and-drop-lists-iw",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "angular drag and drop component for lists",
   "main": "index.js",
   "scripts": {
@@ -29,8 +29,5 @@
   "bugs": {
     "url": "https://github.com/rahul-mitra/ngx-drag-and-drop-lists-iw/issues"
   },
-  "homepage": "https://github.com/rahul-mitra/ngx-drag-and-drop-lists-iw#readme",
-  "dependencies": {
-    "@angular/compiler-cli": "^15.0.3"
-  }
+  "homepage": "https://github.com/rahul-mitra/ngx-drag-and-drop-lists-iw#readme"
 }
