@@ -1,0 +1,6 @@
+node_modules/
+aot/    
+debug.log
+npm-debug.log
+/.vscode
+.angular

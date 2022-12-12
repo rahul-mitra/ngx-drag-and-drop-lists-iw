@@ -1,0 +1,38 @@
+import { OnDestroy, OnInit, ElementRef, EventEmitter } from '@angular/core';
+import { DndState, DndListSettings } from '../services';
+import { Subject } from 'rxjs';
+import * as i0 from "@angular/core";
+export declare const dropAccepted: Subject<any>;
+export declare class DndList implements OnInit, OnDestroy {
+    readonly element: ElementRef;
+    private readonly dndState;
+    private optionP;
+    set option(v: DndListSettings | undefined);
+    get option(): DndListSettings;
+    dndModel?: any[];
+    set dndPlaceholder(placeholder: Element);
+    dndDragOver: EventEmitter<any>;
+    dndDrop: EventEmitter<any>;
+    dndInserted: EventEmitter<any>;
+    private dragState;
+    private nativeElement;
+    private listSettings;
+    private placeholder;
+    constructor(element: ElementRef, dndState: DndState);
+    ngOnInit(): void;
+    ngOnDestroy(): void;
+    handleDragEnter(event: DragEvent): boolean;
+    handleDragOver(event: DragEvent): boolean;
+    handleDrop(event: DragEvent): boolean;
+    handleDragLeave(event: DragEvent): void;
+    private getPlaceholderElement;
+    private getMimeType;
+    private getItemType;
+    private isDropAllowed;
+    private getDropEffect;
+    private stopDragOver;
+    private invokeCallback;
+    private getPlaceholderIndex;
+    static ɵfac: i0.ɵɵFactoryDeclaration<DndList, never>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<DndList, "[dndList]", never, { "option": "dndList"; "dndModel": "dndModel"; "dndPlaceholder": "dndPlaceholder"; }, { "dndDragOver": "dndDragOver"; "dndDrop": "dndDrop"; "dndInserted": "dndInserted"; }, never, never, false, never>;
+}

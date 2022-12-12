@@ -1,0 +1,36 @@
+{
+  "name": "ngx-drag-and-drop-lists-iw",
+  "version": "1.0.0",
+  "description": "angular drag and drop component for lists",
+  "main": "index.js",
+  "scripts": {
+    "ngc": "ngc",
+    "build": "npm run ngc && node ./scripts/copy-package",
+    "publishPackage": "npm run build && cd dist && npm publish",
+    "dev": "tsc --watch"
+  },
+  "precommit": [
+    "build"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahul-mitra/ngx-drag-and-drop-lists-iw.git"
+  },
+  "keywords": [
+    "drag-and-drop",
+    "angular12",
+    "angular14",
+    "angular13",
+    "angular15",
+    "alignment"
+  ],
+  "author": "Rahul Mitra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rahul-mitra/ngx-drag-and-drop-lists-iw/issues"
+  },
+  "homepage": "https://github.com/rahul-mitra/ngx-drag-and-drop-lists-iw#readme",
+  "dependencies": {
+    "@angular/compiler-cli": "^15.0.3"
+  }
+}
